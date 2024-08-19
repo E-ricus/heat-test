@@ -45,3 +45,11 @@ Some errors might be better to be deal with as soon as they are catched.
 * Avoid unnecesary allocations. To go arround easier some lifetime checks, there are some unnecesary clones
 and allocations, for instance with the Devices list, with the channels architecture, those might not be necessary.
 * Use a crate like log_env to add colors to the standard output to identify easier the devices, from the summary, and program logs/
+
+## Over time changes
+* Write up of this README.
+* Clean the Map of values when the config changes (bug)
+* move the logic to send the current values in the DeviceReader to a function,
+that was previously repeated in the read_content and the from_config function.
+This also to allow to move this send out of the init, to have a better error handling when creating the task.
+* Removal of the unwraps to handling the error in the task creation.
