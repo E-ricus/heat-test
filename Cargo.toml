@@ -4,6 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-serde_json = "1.0"                                  # Parsing files
-serde = { version = "1.0", features = ["derive"] }  # Easier deserilization
-tokio = { version = "1.39", features = ["full"] } # Async runtime
+serde_json = "1.0"                                 # Parsing files
+serde = { version = "1.0", features = ["derive"] } # Easier deserilization
+tokio = { version = "1.39", features = ["full"] }  # Async runtime
+chrono = "0.4.38"                                  # To get a nice timestamp
+anyhow = "1.0"                                     # Easier error handling

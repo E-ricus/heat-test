@@ -1,0 +1,14 @@
+{
+  "PV Inverter": {
+    "file": "./pv_inverter_1.txt",
+    "cycle_time_ms": "1000"
+  },
+  "Diesel Genset": {
+    "file": "./diesel_1.txt",
+    "cycle_time_ms": "1200"
+  },
+  "BESS": {
+    "file": "./bess_1.txt",
+    "cycle_time_ms": "500"
+  }
+}
